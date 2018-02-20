@@ -1,0 +1,14 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^api/v1/(.*)/(.*)/get$ api/v1/crud.php?method=get&table=$1&id=$2 [QSA,NC,L]
+RewriteRule ^api/v1/(.*)/(.*)/update$ api/v1/crud.php?method=put&table=$1&id=$2 [QSA,NC,L]
+RewriteRule ^api/v1/(.*)/(.*)/delete$ api/v1/crud.php?method=delete&table=$1&id=$2 [QSA,NC,L]
+RewriteRule ^api/v1/(.*)/create$ api/v1/crud.php?method=post&table=$1 [QSA,NC,L]
+RewriteRule ^api/v1/cities/(.*)/travellers/$ api/v1/Filter.php?mainmode=cities&mode=travellers&city=$1 [QSA,NC,L]
+RewriteRule ^api/v1/cities/(.*)/places/$ api/v1/Filter.php?mainmode=cities&mode=places&city=$1 [QSA,NC,L]
+RewriteRule ^api/v1/cities/(.*)/$ api/v1/Filter.php?mainmode=cities&mode=all [QSA,NC,L]
+RewriteRule ^api/v1/travellers/(.*)/cities/$ api/v1/Filter.php?mainmode=travellers&mode=cities&traveller=$1 [QSA,NC,L]
+RewriteRule ^api/v1/travellers/(.*)/places/$ api/v1/Filter.php?mainmode=travellers&mode=places&traveller=$1 [QSA,NC,L]
+</IfModule>

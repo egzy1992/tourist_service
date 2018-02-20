@@ -1,0 +1,43 @@
+INSERT INTO `tourist_service`.`cities` (`cityId`, `cityName`) VALUES ('1', 'New York');
+INSERT INTO `tourist_service`.`cities` (`cityId`, `cityName`) VALUES ('2', 'Moscow');
+INSERT INTO `tourist_service`.`cities` (`cityId`, `cityName`) VALUES ('3', 'Madrid');
+INSERT INTO `tourist_service`.`cities` (`cityId`, `cityName`) VALUES ('4', 'Milan');
+INSERT INTO `tourist_service`.`cities` (`cityId`, `cityName`) VALUES ('5', 'Paris');
+
+
+
+INSERT INTO `tourist_service`.`places` (`placeId`, `city`, `distance`, `placeName`) VALUES ('1', '1', '10', 'Brooklyn Tower');
+INSERT INTO `tourist_service`.`places` (`placeId`, `city`, `distance`, `placeName`) VALUES ('2', '2', '1', 'Kremlin');
+INSERT INTO `tourist_service`.`places` (`placeId`, `city`, `distance`, `placeName`) VALUES ('3', '1', '4', 'Statue of Liberty');
+INSERT INTO `tourist_service`.`places` (`placeId`, `city`, `distance`, `placeName`) VALUES ('4', '3', '5', 'Santjago Bernabeu');
+INSERT INTO `tourist_service`.`places` (`placeId`, `city`, `distance`, `placeName`) VALUES ('5', '5', '2', 'Eifel Tower');
+INSERT INTO `tourist_service`.`places` (`placeId`, `city`, `distance`, `placeName`) VALUES ('6', '4', '4', 'San Siro');
+INSERT INTO `tourist_service`.`places` (`placeId`, `city`, `distance`, `placeName`) VALUES ('7', '5', '3', 'Pantheon');
+
+
+INSERT INTO `tourist_service`.`travellers` (`travellerId`, `name`) VALUES ('1', 'Ivan Petrov');
+INSERT INTO `tourist_service`.`travellers` (`travellerId`, `name`) VALUES ('2', 'Svetlana Kolegova');
+INSERT INTO `tourist_service`.`travellers` (`travellerId`, `name`) VALUES ('3', 'Igor Hitrin');
+INSERT INTO `tourist_service`.`travellers` (`travellerId`, `name`) VALUES ('4', 'Anna Kachanova');
+
+INSERT INTO `tourist_service`.`rates` (`rateId`, `place`, `traveller`, `rating`) VALUES ('1', '2', '1', '7');
+INSERT INTO `tourist_service`.`rates` (`rateId`, `place`, `traveller`, `rating`) VALUES ('2', '3', '2', '4');
+
+INSERT INTO `tourist_service`.`rates` (`rateId`, `place`, `traveller`, `rating`) VALUES ('3', '4', '4', '6');
+
+INSERT INTO `tourist_service`.`rates` (`rateId`, `place`, `traveller`, `rating`) VALUES ('4', '6', '1', '1');
+
+INSERT INTO `tourist_service`.`rates` (`rateId`, `place`, `traveller`, `rating`) VALUES ('5', '5', '3', '3');
+
+INSERT INTO `tourist_service`.`rates` (`rateId`, `place`, `traveller`, `rating`) VALUES ('6', '4', '1', '10');
+
+INSERT INTO `tourist_service`.`rates` (`rateId`, `place`, `traveller`, `rating`) VALUES ('7', '3', '1', '7');
+INSERT INTO `tourist_service`.`rates` (`rateId`, `place`, `traveller`, `rating`) VALUES ('8', '5', '4', '4');
+
+INSERT INTO `tourist_service`.`rates` (`rateId`, `place`, `traveller`, `rating`) VALUES ('9', '7', '3', '5');
+
+INSERT INTO `tourist_service`.`rates` (`rateId`, `place`, `traveller`, `rating`) VALUES ('10', '2', '1', '6');
+
+INSERT INTO `tourist_service`.`rates` (`rateId`, `place`, `traveller`, `rating`) VALUES ('11', '6', '3', '3');
+
+INSERT INTO `tourist_service`.`rates` (`rateId`, `place`, `traveller`, `rating`) VALUES ('12', '3', '1', '2');
